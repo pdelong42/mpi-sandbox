@@ -3,11 +3,14 @@
 set -euo pipefail
 
 MPIRUN=/usr/local/software/OpenMPI/openmpi-2.0.0/bin/mpirun
-NODES=10
-PPN=28
-NP=$(( $NODES * $PPN ))
+
+test -z "${NODES:-}" && NODES=10
+test -z "${PPN:-}"   && PPN=28
 
 PROGFILE=${1:-}
+NP=$(( $NODES * $PPN ))
+
+echo NP=$NP
 
 if test -z "$PROGFILE" ; then
    echo "first arg should be the name of the program to be run"
