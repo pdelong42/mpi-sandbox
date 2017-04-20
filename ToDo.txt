@@ -1,3 +1,9 @@
+ - try some tests with only two proceseses
+   - NODES=2, PPN=1
+   - NODES=1, PPN=2
+
+ - see how to get PBS to return available resources (and pick the max as the default)
+
  - learn some useful Makefile syntax
 
  - figure-out how to pipe and redirect stdout/stderr from an interactive run of
