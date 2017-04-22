@@ -1,6 +1,6 @@
 CC=/usr/local/software/OpenMPI/openmpi-2.0.0/bin/mpicc
 
-all: hello-simple hello-send-recv hello-send-recv-2
+all: hello-simple hello-send-recv hello-send-recv-2 hello-bcast
 
 hello-simple: hello-simple.c
 	$(CC) -o $@ hello-simple.c
@@ -11,5 +11,8 @@ hello-send-recv: hello-send-recv.c
 hello-send-recv-2: hello-send-recv-2.c
 	$(CC) -o $@ hello-send-recv-2.c
 
+hello-bcast: hello-bcast.c
+	$(CC) -o $@ hello-bcast.c
+
 clean:
-	rm -f hello-simple hello-send-recv hello-send-recv-2
+	rm -f hello-simple hello-send-recv hello-send-recv-2 hello-bcast

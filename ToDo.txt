@@ -1,4 +1,4 @@
- - try some tests with only two proceseses
+ + try some tests with only two proceseses
    - NODES=2, PPN=1
    - NODES=1, PPN=2
 
@@ -9,9 +9,9 @@
  - figure-out how to pipe and redirect stdout/stderr from an interactive run of
    qsub (version of PBS might be the issue)
 
- - try MPI_Send / MPI_Recv of a simple type, between two processes
+ + try MPI_Send / MPI_Recv of a simple type, between two processes
 
- - try MPI_Bcast
+ + try MPI_Bcast
 
  - try MPI_Reduce
 
