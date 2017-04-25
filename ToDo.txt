@@ -13,7 +13,7 @@
 
  + try MPI_Bcast
 
- - try MPI_Reduce
+ + try MPI_Reduce
 
  - try MPI_Barrier
 
